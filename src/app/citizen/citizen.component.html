@@ -1,0 +1,5 @@
+<camera (getPicture)="handleImage($event)"></camera>
+
+<div class="webcam-image" *ngIf="webcamImage">
+  <img [src]="webcamImage.imageAsDataUrl" />
+</div>
